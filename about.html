@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Elibrary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- STYLESHEET  -->
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- icon -->
+            <nav class="navbar navbar-light bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- due to anchor tag if we click on svg / icon it will redirect us to home page -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-book-half" viewBox="0 0 16 16">
+                            <path
+                                d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                        </svg><!-- svg tag ends here -->
+                    </a>
+                </div>
+            </nav>
+
+            <!--  blank space  -->
+            <!-- navigation bar branding -->
+            <a class="navbar-brand" href="index.html">Elibrary</a>
+            <!-- due to anchor tag if we click on branding it will redirect us to home page -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <!-- home page linked here -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="suggestions.html">Suggestions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <!-- about page is linked here -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <!-- dropdown toggle button is here  -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <!-- dropdown menu -->
+                            <!-- first option for donate your old books -->
+                            <li><a class="dropdown-item" href="#">Donate your old books</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <!-- dropdown divider -->
+                            <!-- second option for request for books  -->
+                            <li><a class="dropdown-item" href="#">request for books</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <!-- dropdown divider horizontal line-->
+                            <!-- third option is for feedback -->
+                            <li><a class="dropdown-item" href="#">Feedback</a></li>
+                        </ul>
+                    </li>
+                    <!-- dropdown menu list completed  -->
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact.html" tabindex="-1" aria-disabled="true">Contact Us</a>
+                    </li>
+                    <!-- here we linked a contact page -->
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <form class="d-flex my-1">
+                    <button class="btn btn-danger mx-2" type="button" data-bs-toggle="modal"
+                        data-bs-target="#LoginModal">Login</button>
+                    <button class="btn btn-danger" type="button" data-bs-toggle="modal"
+                        data-bs-target="#SignUpModal">SignUp</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- here we completed your navigation bar  -->
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="abc@example.com">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SignUp Modal -->
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SignUpModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="abc@example.com">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container my-4">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 col-sm-7">
+                <h2 class="featurette-heading fw-normal lh-1">It is our small try to provide books. <span
+                        class="text-muted">It’ll
+                        blow your mind.</span></h2>
+                <p class="lead">Books make pleasure and fun. Give us knowledge. Tech us about life or so many things are
+                    releted to our day-to-day life</p>
+            </div>
+            <div class="col-md-5 col-sm-5">
+                <img class="img-fluid" src="images/about1.jpg"  alt="">
+
+            </div>
+        </div>
+
+        <hr class="featurette-divider my-5">
+
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 col-sm-7 order-md-2 order-sm-2">
+                <h2 class="featurette-heading fw-normal lh-1">Reading books is better habit, <span
+                        class="text-muted">than scrolling social media.</span></h2>
+                <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how
+                    this layout would work with some actual real-world content in place.</p>
+            </div>
+            <div class="col-md-5 col-sm-5 order-md-1 order-sm-1">
+                <img class="img-fluid" src="images/about4.jpg" width="250" height="250" alt="">
+
+
+            </div>
+        </div>
+
+        <hr class="featurette-divider my-5">
+
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 col-sm-7">
+                <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll
+                        blow your mind.</span></h2>
+                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
+                    prose here.</p>
+            </div>
+            <div class="col-md-5 col-sm-5">
+                <img class="img-fluid" src="images/about3.jpg" width="250" height="250" alt="">
+
+            </div>
+        </div>
+
+        <hr class="featurette-divider my-5">
+
+    </div>
+
+
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2017–2022 Elibrary, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

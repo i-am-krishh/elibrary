@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Suggestions</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- icon -->
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- due to anchor tag if we click on svg / icon it will redirect us to home page -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-book-half" viewBox="0 0 16 16">
+                            <path
+                                d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+                        </svg><!-- svg tag ends here -->
+                    </a>
+                </div>
+            </nav>
+
+            <!-- navigation bar branding -->
+            <a class="navbar-brand" href="index.html">Elibrary</a>
+            <!-- due to anchor tag if we click on branding it will redirect us to home page -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <!-- here is our home page it is bright than other due to active class -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="suggestions.html">Suggestions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <!-- here we linked our about page  -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Donate your old books</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Request for books</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item" href="#">Feedback</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact.html" tabindex="-1" aria-disabled="true">ContactUs</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+
+                </form>
+                <!-- <li class="nav-item"> -->
+                <form class="d-flex my-1">
+                    <button class="btn btn-danger mx-2" type="button" data-bs-toggle="modal"
+                        data-bs-target="#LoginModal">Login</button>
+                    <button class="btn btn-danger" type="button" data-bs-toggle="modal"
+                        data-bs-target="#SignUpModal">SignUp</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="abc@example.com">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SignUp Modal -->
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SignUpModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="abc@exampl.com">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid my-2">
+        <a href="suggestions.html"><button type="button" class="btn btn-outline-primary">Newspaper</button></a>
+        <a href="books.html"><button type="button" class="btn btn-outline-danger active">Books</button></a>
+        <a href="comics.html"><button type="button" class="btn btn-outline-dark">Comics</button></a>
+        <a href="audiobooks.html"><button type="button" class="btn btn-outline-success">audiobooks</button></a>
+    </div>
+
+
+    <div class="container">
+        <div class="row mb-2 my-2">
+
+
+            <!-- Atomic Habits -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                    <div class="col-md-6 col-sm-6 col-xs-6  p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-primary">Spiderman</strong> -->
+                        <h3 class="mb-0">Atomic Habits</h3>
+                        <div class="mb-1 text-muted">Aug 5</div>
+                        <p class="card-text mb-auto">
+
+                        </p>
+                        <a href="books/Atomic Habits_ Tiny Changes, Remarkable Results.pdf" target="_blank"
+                            class="stretched-link">
+                            <button class="btn btn-outline-primary">Read</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="bd-placeholder-img" width="200" height="250" src="books/Atomic Habits.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- After the cure -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                    <div class="col-md-6 col-sm-6 col-xs-6  p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-primary">Doremon</strong> -->
+                        <h3 class="mb-0">After The Cure</h3>
+                        <div class="mb-1 text-muted">Aug 5</div>
+                        <p class="card-text mb-auto">
+
+                        </p>
+                        <a href="books/After-the-Cure.pdf" target="_blank" class="stretched-link">
+                            <button class="btn btn-outline-primary">Read</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="bd-placeholder-img" width="200" height="250" src="books/After-the-Cure.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mb-2 my-2">
+
+
+            <!-- A Brief History of Time  -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                    <div class="col-md-6 col-sm-6 col-xs-6  p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-danger"></strong> -->
+                        <h3 class="mb-0">A Brief History of Time</h3>
+                        <div class="mb-1 text-muted">Aug 5</div>
+                        <p class="card-text mb-auto"></p>
+                        <a href="books/Hawking, Stephen - A Brief History of Time - From the big bang to black holes.pdf"
+                            target="_blank" class="stretched-link">
+                            <button class="btn btn-outline-primary">Read</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="bd-placeholder-img" width="200" height="250"
+                            src="books/stephen_hawking_a_brief_history_of_time.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to  win friends and influence people -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col-md-6 col-sm-6 col-xs-6 p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-success">Avenger</strong> -->
+                        <h3 class="mb-0">How To Win Friends And Influence People</h3>
+                        <div class="mb-1 text-muted">Aug 5</div>
+                        <p class="mb-auto">
+
+                        </p>
+                        <a href="books/How-to-Win-Friends-and-Influence-People-Dale-Carnegie.pdf" target="_blank"
+                            class="stretched-link">
+                            <button class="btn btn-outline-primary">Read</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="bd-placeholder-img" width="200" height="250"
+                            src="books/How-to-Win-Friends-and-Influence-People-Dale-Carnegie.jpg" alt="">
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="row mb-2 my-2">
+
+
+            <!-- Rich Dad And Poor Dad -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                    <div class="col-md-6 col-sm-6 col-xs-6  p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-primary">Batman</strong> -->
+                        <h3 class="mb-0">Rich Dad And Poor Dad</h3>
+                        <div class="mb-1 text-muted">Aug 5</div>
+                        <p class="card-text mb-auto">
+
+                        </p>
+                        <a href="books/rich-dad-poor-dad.pdf" target="_blank" class="stretched-link">
+                            <button class="btn btn-outline-primary">Read</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="bd-placeholder-img" width="200" height="250" src="books/rich-dad-poor-dad.jpg"
+                            alt="">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- the alchemist -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                    <div class="col-md-6 col-sm-6 col-xs-6  p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-danger">Batman And Spiderman</strong> -->
+                        <h3 class="mb-0">The Alchemist</h3>
+                        <div class="mb-1 text-muted">Aug 5</div>
+                        <p class="card-text mb-auto">
+
+                        </p>
+                        <a href="books/The-Alchemist-PDF-Book-In-English-By-Paulo-Coelho.pdf" target="_blank"
+                            class="stretched-link">
+                            <button class="btn btn-outline-primary">Read</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="bd-placeholder-img" width="200" height="250"
+                            src="books/The-Alchemist-PDF-Book-In-English-By-Paulo-Coelho.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mb-2 my-2">
+
+
+            <!-- The Psychology of Money -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                    <div class="col-md-6 col-sm-6 col-xs-6  p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-danger">Iron man</strong> -->
+                        <h3 class="mb-0">The Psychology Of Money</h3>
+                        <div class="mb-1 text-muted">Aug 5</div>
+                        <p class="card-text mb-auto"></p>
+                        <a href="books/The-Psychology-of-Money.pdf" target="_blank" class="stretched-link">
+                            <button class="btn btn-outline-primary">Read</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="bd-placeholder-img" width="200" height="250" src="books/The-Psychology-of-Money.jpg"
+                            alt="">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Think and grow rich -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col-md-6 col-sm-6 col-xs-6 p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-success">Captian America</strong> -->
+                        <h3 class="mb-0">Think And Grow Rich</h3>
+                        <div class="mb-1 text-muted">Aug 5</div>
+                        <p class="mb-auto">
+
+                        </p>
+                        <a href="books/Think-And-Grow-Rich.pdf" target="_blank" class="stretched-link">
+                            <button class="btn btn-outline-primary">Read</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="bd-placeholder-img" width="200" height="250" src="books/Think-And-Grow-Rich.png"
+                            alt="">
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row mb-2 my-2">
+
+
+            <!-- awaken the gaint within -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                    <div class="col-md-6 col-sm-6 col-xs-6  p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-primary">Spiderman</strong> -->
+                        <h3 class="mb-0">Awaken the Gaint Within</h3>
+                        <div class="mb-1 text-muted">Aug 5</div>
+                        <p class="card-text mb-auto">
+
+                        </p>
+                        <a href="books/Awaken_the_Giant_Within.pdf" target="_blank" class="stretched-link">
+                            <button class="btn btn-outline-primary">Read</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="bd-placeholder-img" width="200" height="250" src="books/Awaken_the_Giant_Within.jpg"
+                            alt="">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- find your why -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                    <div class="col-md-6 col-sm-6 col-xs-6  p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-primary">Doremon</strong> -->
+                        <h3 class="mb-0">Find Your Why</h3>
+                        <div class="mb-1 text-muted">Aug 5</div>
+                        <p class="card-text mb-auto">
+
+                        </p>
+                        <a href="books/Find_Your_Why_A.pdf" target="_blank" class="stretched-link">
+                            <button class="btn btn-outline-primary">Read</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="bd-placeholder-img" width="200" height="250" src="books/Find_Your_Why_A.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mb-2 my-2">
+
+
+            <!-- smarter faster better -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                    <div class="col-md-6 col-sm-6 col-xs-6  p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-danger">Superman</strong> -->
+                        <h3 class="mb-0">Smarter Faster Better</h3>
+                        <div class="mb-1 text-muted">Aug 5</div>
+                        <p class="card-text mb-auto"></p>
+                        <a href="books/Smarter_Faster_Better_.pdf" target="_blank" class="stretched-link">
+                            <button class="btn btn-outline-primary">Read</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="bd-placeholder-img" width="200" height="250" src="books/Smarter_Faster_Better_.jpg"
+                            alt="">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Start With Why -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col-md-6 col-sm-6 col-xs-6 p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-success">Avenger</strong> -->
+                        <h3 class="mb-0">Start With Why</h3>
+                        <div class="mb-1 text-muted">Aug 5</div>
+                        <p class="mb-auto">
+
+                        </p>
+                        <a href="books/Start_With_Why_How_Great_Leaders_Inspire_Everyone_to_Take_Action.pdf"
+                            target="_blank" class="stretched-link">
+                            <button class="btn btn-outline-primary">Read</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="bd-placeholder-img" width="200" height="250"
+                            src="books/Start_With_Why_How_Great_Leaders_Inspire_Everyone_to_Take_Action.png" alt="">
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="row mb-2 my-2">
+
+
+            <!-- The 5 Second Rule -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                    <div class="col-md-6 col-sm-6 col-xs-6  p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-primary">Batman</strong> -->
+                        <h3 class="mb-0">The 5 Second Rule</h3>
+                        <div class="mb-1 text-muted">Aug 5</div>
+                        <p class="card-text mb-auto">
+
+                        </p>
+                        <a href="books/The_5_Second_Rule.pdf" target="_blank" class="stretched-link">
+                            <button class="btn btn-outline-primary">Read</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="bd-placeholder-img" width="200" height="250" src="books/The_5_Second_Rule.jpg"
+                            alt="">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- why we sleep -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                    <div class="col-md-6 col-sm-6 col-xs-6  p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-danger">Batman And Spiderman</strong> -->
+                        <h3 class="mb-0">Why We Sleep</h3>
+                        <div class="mb-1 text-muted">Aug 5</div>
+                        <p class="card-text mb-auto">
+
+                        </p>
+                        <a href="books/Why_We_Sleep_Unlocking_the_Power_of_Sleep_and_Dreams.pdf" target="_blank"
+                            class="stretched-link">
+                            <button class="btn btn-outline-primary">Read</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="bd-placeholder-img" width="200" height="250"
+                            src="books/Why_We_Sleep_Unlocking_the_Power_of_Sleep_and_Dreams.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mb-2 my-2">
+
+
+            <!-- Getting Things Done -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                    <div class="col-md-6 col-sm-6 col-xs-6  p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-danger">Iron man</strong> -->
+                        <h3 class="mb-0">Getting Things Done</h3>
+                        <div class="mb-1 text-muted">Aug 5</div>
+                        <p class="card-text mb-auto"></p>
+                        <a href="books/Getting_Things_Done_.pdf" target="_blank" class="stretched-link">
+                            <button class="btn btn-outline-primary">Read</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="bd-placeholder-img" width="200" height="250" src="books/Getting_Things_Done_.jpg"
+                            alt="">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Willpower Instinct -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col-md-6 col-sm-6 col-xs-6 p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-success">Captian America</strong> -->
+                        <h3 class="mb-0">The Willpower Instinct</h3>
+                        <div class="mb-1 text-muted">Aug 5</div>
+                        <p class="mb-auto">
+
+                        </p>
+                        <a href="books/The_Willpower_Instinct_.pdf" target="_blank" class="stretched-link">
+                            <button class="btn btn-outline-primary">Read</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="bd-placeholder-img" width="200" height="250" src="books/The_Willpower_Instinct_.jpg"
+                            alt="">
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="container">
+        <div class="row mb-2 my-2">
+
+
+            <!-- You are a badass -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                    <div class="col-md-6 col-sm-6 col-xs-6  p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-primary">Batman</strong> -->
+                        <h3 class="mb-0">You are a badass</h3>
+                        <div class="mb-1 text-muted">Aug 5</div>
+                        <p class="card-text mb-auto">
+
+                        </p>
+                        <a href="books/You_Are_a_Badass__How_To_Stop_Doubting_Your_Greatness_And_Start_living_An_Awesome_Life.pdf"
+                            target="_blank" class="stretched-link">
+                            <button class="btn btn-outline-primary">Read</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="bd-placeholder-img" width="200" height="250"
+                            src="books/You_Are_a_Badass__How_To_Stop_Doubting_Your_Greatness_And_Start_living_An_Awesome_Life.jpg"
+                            alt="">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 12 Rules For Life  -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                    <div class="col-md-6 col-sm-6 col-xs-6  p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-danger">Batman And Spiderman</strong> -->
+                        <h3 class="mb-0">12 Rules For Life </h3>
+                        <div class="mb-1 text-muted">Aug 5</div>
+                        <p class="card-text mb-auto">
+
+                        </p>
+                        <a href="books/12 rule for life.pdf" target="_blank" class="stretched-link">
+                            <button class="btn btn-outline-primary">Read</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="bd-placeholder-img" width="200" height="250" src="books/12 rule for life.jpg"
+                            alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mb-2 my-2">
+
+
+            <!-- The 48 Laws Of Power -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                    <div class="col-md-6 col-sm-6 col-xs-6  p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-danger">Iron man</strong> -->
+                        <h3 class="mb-0">The 48 Laws Of Power</h3>
+                        <div class="mb-1 text-muted">Aug 5</div>
+                        <p class="card-text mb-auto"></p>
+                        <a href="books/The 48 Laws Of Power.pdf" target="_blank" class="stretched-link">
+                            <button class="btn btn-outline-primary">Read</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="bd-placeholder-img" width="200" height="250" src="books/the 48 Laws Of Power.jpeg"
+                            alt="">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Keep Going 10 Ways -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col-md-6 col-sm-6 col-xs-6 p-4 d-flex flex-column position-static">
+                        <!-- <strong class="d-inline-block mb-2 text-success">Captian America</strong> -->
+                        <h3 class="mb-0">Keep Going 10 Ways</h3>
+                        <div class="mb-1 text-muted">Aug 5</div>
+                        <p class="mb-auto">
+
+                        </p>
+                        <a href="books/Keep_Going__10_Ways.pdf" target="_blank" class="stretched-link">
+                            <button class="btn btn-outline-primary">Read</button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img class="bd-placeholder-img" width="200" height="250" src="books/Keep_Going__10_Ways.png"
+                            alt="">
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2022–2023 Elibrary, Inc. · <a href="#">Privacy</a> & <a href="#">Terms</a></p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
